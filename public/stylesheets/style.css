@@ -31,7 +31,7 @@ ul {
 }
 
 .card p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .social {
@@ -94,12 +94,16 @@ ul {
 
 .project p {
   line-height: 1.3em;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 
 .project li {
   padding: 3px;
+}
+
+.project li:hover {
+  color: #0023F2;
 }
 
 .shadow {
