@@ -1,4 +1,9 @@
-new website, this is the planned design.
+# calum.co V2
+#### new website, this is the planned design.
+
+## Changes:
+- set up node
+- Started html/css for home page (sample data currently)
 
 will finish by end of january.
 

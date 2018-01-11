@@ -1,11 +1,122 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+<% include header %>
+
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card shadow">
+            <img class="profilePhoto" src="images/sm-sq.jpg" />
+            <h1>Calum Patrick.</h1>
+            <p>Currently studying mathematics at the University of Waterloo, as well as designing and developing web apps in
+              my free time using Node.js.</p>
+            <div class="social" <p>
+              <a href="#">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              </p>
+            </div>
+          </div>
+          <section class="featuredBlock">
+            <h1 class="stitle">Featured:</h1>
+            <hr>
+            <div class="project featured">
+              <div class="ptext">
+                <h1> &#x1F3EB Studddent.</h1>
+                <p>A powerful, curated stash of online discounts available for students.</p>
+              </div>
+              <div class="bullets" <ul>
+                <a href="#">
+                  <li>&#x1F17F #1 On Product Hunt</li>
+                </a>
+                <a href="#">
+                  <li>&#x1F517 View Project</li>
+                </a>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="projects">
+            <h1 class="stitle">Projects:</h1>
+            <hr>
+            <div class="project">
+              <div class="ptext">
+                <h1> &#x1F4C8 Coindash.</h1>
+                <p>A powerful, curated stash of online discounts available for students.</p>
+              </div>
+              <div class="bullets" <ul>
+                <a href="#">
+                  <li>&#x1F517 View Project</li>
+                </a>
+                </ul>
+              </div>
+            </div>
+            <div class="project">
+              <div class="ptext">
+                <h1> &#x26C5 LocalWeather.</h1>
+                <p>A powerful, curated stash of online discounts available for students.</p>
+              </div>
+              <div class="bullets" <ul>
+                <a href="#">
+                  <li>&#x1F517 View Project</li>
+                </a>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col-lg-6">
+          <section class="tasks">
+            <h1 class="stitle">What I'm working on:</h1>
+            <hr>
+            <div class="day">
+              <h1>Today</h1>
+              <hr>
+              <ul>
+                <li>&#x2705&nbsp; First Task</li>
+                <li>&#x2705&nbsp; Second Task</li>
+                <li>&#x2705&nbsp; Third Task</li>
+              </ul>
+            </div>
+            <div class="day">
+              <h1>Yesterday</h1>
+              <hr>
+              <ul>
+                <li>&#x2705&nbsp; First Task</li>
+                <li>&#x2705&nbsp; Second Task</li>
+                <li>&#x2705&nbsp; Third Task</li>
+                <li>&#x2705&nbsp; Fourth Task</li>
+                <li>&#x2705&nbsp; Fifth Task</li>
+              </ul>
+            </div>
+            <div class="day">
+              <h1>January 9th</h1>
+              <hr>
+              <ul>
+                <li>&#x2705&nbsp; First Task</li>
+                <li>&#x2705&nbsp; Second Task</li>
+              </ul>
+            </div>
+            <div class="day">
+              <h1>January 8th</h1>
+              <hr>
+              <ul>
+                <li>&#x2705&nbsp; First Task</li>
+                <li>&#x2705&nbsp; Second Task</li>
+                <li>&#x2705&nbsp; Third Task</li>
+                <li>&#x2705&nbsp; Fourth Task</li>
+                <li>&#x2705&nbsp; Fifth Task</li>
+                <li>&#x2705&nbsp; Sixth Task</li>
+              </ul>
+            </div>
+            <p class="desc"></p>
+          </section>
+        </div>
+      </div>
+    </div>
   </body>
-</html>

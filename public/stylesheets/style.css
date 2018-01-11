@@ -1,8 +1,168 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(240, 240, 240);
 }
 
-a {
-  color: #00B7FF;
+.container {
+  margin-top: 40px;
+}
+
+ul {
+  list-style: none; 
+}
+
+.featuredBlock {
+  display: block;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #0023F2;
+  padding: 20px;
+  border-radius: .8em;
+  color: #fff;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  
+}
+
+.card h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.social {
+  height: 30px;
+}
+
+.social i {
+  font-size: 1.4em;
+  padding-right: 15px;
+}
+
+.profilePhoto {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.projects {
+  margin-top: 40px;
+}
+
+.project {
+  width: 100%;
+  height: 110px;
+  background-color: #fff;
+  border-radius: .8em;
+  border: solid 1px #dedede;
+  padding: 17px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.featured {
+  border: solid 1px #0023F2;
+}
+
+.ptext {
+  float: left;
+  width: 50%;
+}
+
+.bullets {
+  float: right;
+  width: 45%;
+  height: 100%;
+  padding-top: 7px;
+  list-style: none;
+}
+
+.projects hr {
+  margin-bottom: 30px;
+}
+
+
+.project h1 {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.project p {
+  line-height: 1.3em;
+  font-size: 14px;
+}
+
+
+.project li {
+  padding: 3px;
+}
+
+.shadow {
+  box-shadow: 0 12px 30px rgba(0, 31, 204, 0.3);
+  -moz-box-shadow:    0 12px 30px rgba(0, 31, 204, 0.3);
+  -webkit-box-shadow: 0 12px 30px rgba(0, 28, 185, 0.349);
+}
+
+.stitle {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+a, a:hover, a:visited {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+.day {
+  width: 100%;
+  background-color: #fff;
+  border-radius: .8em;
+  border: solid 1px #dedede;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+}
+
+
+.tasks hr {
+  background-color: #0023F2;
+  margin-bottom: 40px;
+}
+
+.day h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 17px;
+  margin-left: 20px;
+}
+
+.day hr {
+  background-color: #dedede;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 560px) {
+  .project {
+    height: 150px;
+  }
+
+  .featured {
+    height: 185px;
+  }
+
+  .ptext {
+    width: 100%;
+    float: none;
+    margin-bottom: -10px;
+  }
+
+  .bullets {
+    width: 100%;
+    float: none;
+  }
 }
