@@ -1,5 +1,6 @@
 # calum.co V2
 
+live version w/o backend: http://csclub.uwaterloo.ca/~capatric/calumv2static/
 
 ## Changes:
 - set up node
