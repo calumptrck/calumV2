@@ -1,11 +1,10 @@
 # calum.co V2
 
-live version w/o backend: http://csclub.uwaterloo.ca/~capatric/calumv2static/
+Live: https://calum.com
 
 ## Todo:
-- set up aws
 - add project management to admin page
-- https
+
 
 will finish by end of ~~january~~ weekend.
 
@@ -18,6 +17,8 @@ will finish by end of ~~january~~ weekend.
 - integrate with db for "What I'm working on"
 - page for viewing all completed tasks
 - finish setting up links
+- set up aws
+- https
 
 
 
