@@ -5,3 +5,13 @@ $( document ).ready(function() {
     twemoji.parse(fb, {"size":72});
     twemoji.parse(pr, {"size":72});
 });
+
+$(document).ready(function() {
+    if ($('.taskDate').first().text() == moment().format('MMMM Do')) {
+        $('.taskDate').first().html("Today");
+        
+    }
+    
+    
+    //$('.taskDate').html("FF");
+});

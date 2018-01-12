@@ -19,7 +19,7 @@
               <a href="//twitter.com">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>
-              <a href="//www.youtube.com/channel/UCM2Fz5E">
+              <a href="//www.youtube.com/channel/UCM2Fz5E-jKbEsMPRedz9ppQ">
                 <i class="fa fa-youtube" aria-hidden="true"></i>
               </a>
               </p>
@@ -89,46 +89,17 @@
           <section class="tasks">
             <h1 class="stitle">What I'm working on:</h1>
             <hr>
-            <div class="day">
-              <h1>Today</h1>
-              <hr>
-              <ul>
-                <li>&#x2705&nbsp; First Task</li>
-                <li>&#x2705&nbsp; Second Task</li>
-                <li>&#x2705&nbsp; Third Task</li>
-              </ul>
-            </div>
-            <div class="day">
-              <h1>Yesterday</h1>
-              <hr>
-              <ul>
-                <li>&#x2705&nbsp; First Task</li>
-                <li>&#x2705&nbsp; Second Task</li>
-                <li>&#x2705&nbsp; Third Task</li>
-                <li>&#x2705&nbsp; Fourth Task</li>
-                <li>&#x2705&nbsp; Fifth Task</li>
-              </ul>
-            </div>
-            <div class="day">
-              <h1>January 9th</h1>
-              <hr>
-              <ul>
-                <li>&#x2705&nbsp; First Task</li>
-                <li>&#x2705&nbsp; Second Task</li>
-              </ul>
-            </div>
-            <div class="day">
-              <h1>January 8th</h1>
-              <hr>
-              <ul>
-                <li>&#x2705&nbsp; First Task</li>
-                <li>&#x2705&nbsp; Second Task</li>
-                <li>&#x2705&nbsp; Third Task</li>
-                <li>&#x2705&nbsp; Fourth Task</li>
-                <li>&#x2705&nbsp; Fifth Task</li>
-                <li>&#x2705&nbsp; Sixth Task</li>
-              </ul>
-            </div>
+            <% days.forEach(function(day){ %>
+                <div class="day">
+                  <h1 class="taskDate"><%= day.date %></h1>
+                  <hr>
+                  <ul>
+                    <% day.tasks.forEach(function(task){ %>
+                    <li>&#x2705&nbsp; <%= task %></li>
+                    <% }); %>
+                </ul>
+              </div>
+            <% }); %>
             <div class="desc"><span>More</span></div>
           </section>
         </div>

@@ -1,9 +1,9 @@
-import dbday from './../models/day';
+import dbday from './../models/Day';
 import { log } from 'util';
 import mypw from './../newdaypw.js';
 var moment = require('moment');
 
-let Day = require('./../models/Day');
+
 
 const dayController = {};
 
@@ -22,20 +22,24 @@ dayController.post = (req, res) => {
     // IF LOGGED IN AS ADMIN
 
     if (req.body.formpassword == mypw) {
-        day.save().then((newDay) => {
-            console.log("Day Received");
-            console.log(newDay);
-            res.status(200).redirect('/post');
-        }).catch((err) => {
-            res.status(500).json({
-                message: err,
-            });
+        console.log("Current DB:");
+        dbday.findOneAndUpdate({"date":currentDate}, { $addToSet: { tasks: req.body.task } }, {upsert:true}, function(err, doc){
+            if (err) { 
+                return res.send(500, { error: err });
+            } else {
+                console.log(doc);
+                res.status(200).redirect('/post');
+            }
         });
+        
+        
+
     } else {
         res.render('index', {title: "Calum Patrick"});
     }
 
     
 };
+
 
 export default dayController;

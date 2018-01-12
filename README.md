@@ -9,13 +9,14 @@ live version w/o backend: http://csclub.uwaterloo.ca/~capatric/calumv2static/
 - finished daily tasks schema & api route
 - added password to form
 - admin page
+- logic for new tasks controller
+- integrate with db for "What I'm working on"
 
 
 ## Todo:
-- logic for new tasks controller
-- integrate with db for "What I'm working on"
-- connect flash for new tasks
-- tests
+- page for viewing all completed tasks
+- finish setting up links
+- set up aws
 
 will finish by end of january.
 
