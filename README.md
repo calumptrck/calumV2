@@ -1,6 +1,6 @@
 # calum.co V2
 
-Live: https://calum.com
+Live: https://calum.co
 
 ## Todo:
 - add project management to admin page
