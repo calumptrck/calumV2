@@ -1,0 +1,22 @@
+<% include header %>
+    <body>
+        <div class="container">
+            <section class="tasks">
+                <a href="/"><h1 class="stitle">What I'm working on:</h1></a>
+                <hr>
+                <% days.forEach(function(day){ %>
+                    <div class="day">
+                        <h1 class="taskDate">
+                            <%= day.date %>
+                        </h1>
+                        <hr>
+                        <ul>
+                        <% day.tasks.forEach(function(task){ %>
+                            <li>&#x2705&nbsp; <%= task %></li>
+                        <% }); %>
+                        </ul>
+                    </div>
+                    <% }); %>
+            </section>
+        </div>
+    </body>
