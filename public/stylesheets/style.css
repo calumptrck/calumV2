@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(241, 241, 241);
 }
 
 .container {
@@ -22,8 +22,9 @@ ul {
   border-radius: .8em;
   color: #fff;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  
+  transition: all .24s cubic-bezier(0,.5,.51,1);
 }
+
 
 .card h1 {
   font-size: 34px;
@@ -63,6 +64,13 @@ ul {
   padding: 17px;
   padding-left: 20px;
   margin-bottom: 25px;
+  transition: all .6s cubic-bezier(0,.5,.51,1);
+}
+
+.project:hover {
+  box-shadow: 0 12px 30px rgba(129, 129, 129, 0.15);
+  -moz-box-shadow:    0 12px 30px rgba(129, 129, 129, 0.15);
+  -webkit-box-shadow: 0 12px 30px rgba(129, 129, 129, 0.15);
 }
 
 .featured {
@@ -110,6 +118,12 @@ ul {
   box-shadow: 0 12px 30px rgba(0, 31, 204, 0.3);
   -moz-box-shadow:    0 12px 30px rgba(0, 31, 204, 0.3);
   -webkit-box-shadow: 0 12px 30px rgba(0, 28, 185, 0.349);
+}
+
+.shadow:hover {
+  box-shadow: 0 13px 30px rgba(0, 21, 141, 0.4);
+  -moz-box-shadow:    0 13px 30px rgba(0, 21, 141, 0.4);
+  -webkit-box-shadow: 0 13px 30px rgba(0, 21, 141, 0.4);
 }
 
 .stitle {
@@ -161,6 +175,20 @@ img.emoji {
   width: 1em;
   margin: 0 .05em 0 .1em;
   vertical-align: -0.1em;
+}
+
+/* admin stuff */
+
+.entry:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+.glyphicon {
+    font-size: 12px;
+}
+
+.submitButton {
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 560px) {

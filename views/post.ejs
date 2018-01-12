@@ -1,0 +1,20 @@
+<% include header %>
+
+    <body>
+        <div class="container">
+            <div class="ad">
+                <a href="/">
+                    <h1 class="title">Add New Tasks</h1>
+                </a>
+            </div>
+            <hr>
+            <div class="controls addForm mt-5">
+                <form action="/newpost" method="POST" name="addForm">
+                    <label for="example-text-input" class="col-form-label">New Task:</label>
+                    <input class="form-control" type="text" name="task"><br>
+                    <label for="example-text-input" class="col-form-label">Password:</label>
+                    <input class="form-control" type="text" name="formpassword">
+                    <button type="submit" class="btn submitButton">Submit</button>
+                </form>
+            </div>
+    </body>

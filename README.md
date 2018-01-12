@@ -2,15 +2,20 @@
 
 live version w/o backend: http://csclub.uwaterloo.ca/~capatric/calumv2static/
 
-## Changes:
+## Recently Finished:
 - set up node
 - 90% done html/css for home page (sample data currently)
+- finish home page
+- finished daily tasks schema & api route
+- added password to form
+- admin page
+
 
 ## Todo:
-- finish home page
-- optimize
+- logic for new tasks controller
 - integrate with db for "What I'm working on"
-- admin page
+- connect flash for new tasks
+- tests
 
 will finish by end of january.
 
