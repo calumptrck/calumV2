@@ -4,6 +4,9 @@ Live: https://calum.co
 
 ## Todo:
 - add project management to admin page
+- use momentjs timezone for EST
+- add indicator for how long ago task was posted
+- small css adjustments for emoji
 
 
 will finish by end of ~~january~~ weekend.
