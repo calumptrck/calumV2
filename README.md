@@ -7,7 +7,7 @@ Live: https://calum.co
 - use momentjs timezone for EST
 - add indicator for how long ago task was posted
 - small css adjustments for emoji
-
+- favicon
 
 will finish by end of ~~january~~ weekend.
 
