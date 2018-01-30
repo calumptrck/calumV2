@@ -3,13 +3,17 @@
 Live: https://calum.co
 
 ## Todo:
-- add project management to admin page
+- Admin Page
+  - add project management
+  - edit current and previous days of tasks
 - use momentjs timezone for EST
 - add indicator for how long ago task was posted
+- hashtags?
 - small css adjustments for emoji
+  - consider different emoji for in-progress tasks
 - favicon
 
-will finish by end of ~~january~~ weekend.
+~~will finish by end of january~~ finished
 
 ## Recently Finished:
 - finish home page
@@ -22,6 +26,7 @@ will finish by end of ~~january~~ weekend.
 - finish setting up links
 - set up aws
 - https
+- Twitter emoji for projects
 
 
 
