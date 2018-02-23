@@ -12,6 +12,7 @@ Live: https://calum.co
 - small css adjustments for emoji
   - consider different emoji for in-progress tasks
 - favicon
+- rewrite date sorting
 
 ~~will finish by end of january~~ finished
 
