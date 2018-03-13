@@ -11,6 +11,7 @@ ul {
   list-style: none; 
 }
 
+
 .featuredBlock {
   display: block;
   margin-top: 40px;
@@ -22,7 +23,7 @@ ul {
   border-radius: .8em;
   color: #fff;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  transition: all .24s cubic-bezier(0,.5,.51,1);
+  transition: all .6s cubic-bezier(0,.5,.51,1);
 }
 
 
@@ -59,9 +60,8 @@ ul {
   width: 100%;
   background-color: #fff;
   border-radius: .8em;
-  border: solid 1px #dedede;
-  padding: 17px;
-  padding-left: 20px;
+  border: 0;
+  padding: 20px 12px 12px 20px;
   margin-bottom: 25px;
   transition: all .6s cubic-bezier(0,.5,.51,1);
   overflow: auto;
@@ -86,7 +86,7 @@ ul {
   float: right;
   width: 45%;
   height: 100%;
-  padding-top: 7px;
+  padding-top: 3px;
   list-style: none;
 }
 
@@ -114,6 +114,14 @@ ul {
   color: #0023F2;
 }
 
+.grow { 
+  transition: all .24s cubic-bezier(0,.5,.51,1); }
+.grow:hover { transform: scale(1.01); }
+
+.grow2 { 
+  transition: all .24s cubic-bezier(0,.5,.51,1); }
+.grow2:hover { transform: scale(1.005); }
+
 .shadow {
   box-shadow: 0 12px 30px rgba(0, 31, 204, 0.3);
   -moz-box-shadow:    0 12px 30px rgba(0, 31, 204, 0.3);
@@ -124,6 +132,14 @@ ul {
   box-shadow: 0 13px 30px rgba(0, 21, 141, 0.4);
   -moz-box-shadow:    0 13px 30px rgba(0, 21, 141, 0.4);
   -webkit-box-shadow: 0 13px 30px rgba(0, 21, 141, 0.4);
+}
+
+.shadow2 {
+  box-shadow: 0 3px 12px 0 hsla(0, 0%, 40%, 0.06);
+}
+
+.shadow2:hover {
+  box-shadow: 0 11px 15px 0 hsla(0, 0%, 80%, 0.2);
 }
 
 .stitle {
@@ -140,9 +156,15 @@ a, a:hover, a:visited {
   width: 100%;
   background-color: #fff;
   border-radius: .8em;
-  border: solid 1px #dedede;
+  border: 0;
   margin-bottom: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  padding-top: 1px;
+  transition: all .6s cubic-bezier(0,.5,.51,1);
+}
+
+.day ul {
+  padding-left: 30px;
 }
 
 .day li {
@@ -164,15 +186,24 @@ a, a:hover, a:visited {
 }
 
 .day hr {
-  background-color: #dedede;
+  background-color: #fff;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .desc span {
   position: relative;
-  border-bottom: solid 1px blue;
-  margin-left: 45%
+  border-bottom: solid 1px #b3b3b3;
+  margin-left: 45%;
+  font-size: 22px;
+}
+
+.desc span:hover {
+  border-bottom: solid 1px #0030E9;
+}
+
+li span {
+  font-size: 14px;
 }
 
 img.emoji {

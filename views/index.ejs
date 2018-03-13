@@ -4,12 +4,11 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <div class="card shadow">
+          <div class="card shadow grow2">
             <img class="profilePhoto" src="images/sm-sq.jpg" />
             <h1>Calum Patrick.</h1>
             <p>Currently studying mathematics at the University of Waterloo, as well as designing and developing web apps in
               my free time using Node.js.</p>
-              <p>calum@calumpatrick.com</p>
             <div class="social" <p>
               <a href="//github.com/calumptrck">
                 <i class="fa fa-github" aria-hidden="true"></i>
@@ -23,11 +22,7 @@
               <a href="//www.youtube.com/channel/UCM2Fz5E-jKbEsMPRedz9ppQ">
                 <i class="fa fa-youtube" aria-hidden="true"></i>
               </a>
-<<<<<<< HEAD
               <a href="mailto:calum@calumpatrick.com">
-=======
-	      <a href="mailto:calum@calumpatrick.com">
->>>>>>> ecf5aa155cc7da402e6aa1b37f5c42335759992b
                 <i class="fa fa-envelope" aria-hidden="true"></i>
               </a>
               </p>
@@ -36,7 +31,8 @@
           <section class="featuredBlock">
             <h1 class="stitle">Featured:</h1>
             <hr>
-            <div class="project featured">
+            <a href="#">
+            <div class="project featured shadow2 grow">
               <div class="ptext">
                 <h1> &#x1F3EB Studddent.</h1>
                 <p>A powerful, curated stash of online discounts available for students.</p>
@@ -50,12 +46,14 @@
                 </a>
                 </ul>
               </div>
+              </a>
             </div>
           </section>
           <section class="projects">
             <h1 class="stitle">Projects:</h1>
             <hr>
-            <div class="project">
+            <a href="//calumptrck.github.io/CoinDash/">
+            <div class="project shadow2 grow">
               <div class="ptext">
                 <h1> &#x1F4C8 Coindash. &nbsp;</h1>
                 <p>A dashboard for monioring the crypto market, and your own investments. </p>
@@ -70,7 +68,9 @@
                 </ul>
               </div>
             </div>
-            <div class="project">
+            </a>
+            <a href="//calumptrck.github.io/LocalWeather/">
+            <div class="project shadow2 grow">
               <div class="ptext">
                 <h1> &#x26C5 LocalWeather.</h1>
                 <p>Plaintext description of the weather on top of beautiful relevant Unsplash images.</p>
@@ -82,7 +82,9 @@
                 </ul>
               </div>
             </div>
-            <div class="project">
+            </a>
+            <a href="//github.com/calumptrck/TuitionCoins">
+            <div class="project shadow2 grow">
               <div class="ptext">
                 <h1> &#x1F4B0 TuitionCoins.</h1>
                 <p>How much $$ UWaterloo students would have if they invested their tuition in bitcoin.</p>
@@ -94,6 +96,7 @@
                 </ul>
               </div>
             </div>
+            </a>
           </section>
         </div>
         <div class="col-lg-6">
@@ -101,17 +104,17 @@
             <h1 class="stitle">What I'm working on:</h1>
             <hr>
             <% days.forEach(function(day){ %>
-                <div class="day">
+                <div class="day shadow2">
                   <h1 class="taskDate"><%= day.date %></h1>
                   <hr>
                   <ul>
                     <% day.tasks.forEach(function(task){ %>
-                    <li>&#x2705&nbsp; <%= task %></li>
+                    <li><span>&#x2705</span>&nbsp; <%= task %></li>
                     <% }); %>
                 </ul>
               </div>
             <% }); %>
-            <div class="desc"><a href="/tasks"><span>More</span></a></div>
+            <div class="desc"><a href="/tasks"><span>👀</span></a></div>
           </section>
         </div>
       </div>

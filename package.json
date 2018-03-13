@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "nodemon --exec babel-node --presets=es2015 -- bin/www",
+    "start:dev": "nodemon --exec babel-node --presets=es2015 -- bin/www2",
+    "start:prod": "nodemon --exec babel-node --presets=es2015 -- bin/www",
     "babel-node": "babel-node --presets=/*a*/ --ignore='foo|bar|baz'"
   },
   "dependencies": {
