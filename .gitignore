@@ -4,3 +4,7 @@ node_modules
 .babelrc
 newdaypw.js
 bin/www
+bin/nohup.out
+bin/npm-debug.log
+nohup.out
+npm-debug.log
