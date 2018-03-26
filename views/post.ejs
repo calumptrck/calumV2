@@ -13,8 +13,21 @@
                     <label for="example-text-input" class="col-form-label">New Task:</label>
                     <input class="form-control" type="text" name="task"><br>
                     <label for="example-text-input" class="col-form-label">Password:</label>
-                    <input class="form-control" type="text" name="formpassword">
+                    <input class="form-control" type="password" name="formpassword">
                     <button type="submit" class="btn submitButton">Submit</button>
                 </form>
+                <div class="days mt-5">
+                <% days.forEach(function(day){ %>
+                <div class="day shadow2">
+                  <h1 class="taskDate"><%= day.date %></h1>
+                  <hr>
+                  <ul>
+                    <% day.tasks.forEach(function(task){ %>
+                    <li><span>&#x2705</span>&nbsp; <%= task %></li>
+                    <% }); %>
+                </ul>
+              </div>
+            <% }); %>
+            </div>
             </div>
     </body>

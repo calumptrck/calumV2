@@ -1,8 +1,6 @@
 
 $( document ).ready(function() {
-    var fb = document.getElementsByClassName('featuredBlock')[0];
-    var pr = document.getElementsByClassName('projects')[0];
-    twemoji.parse(fb, {"size":72});
+    var pr = document.getElementsByClassName('twi')[0];
     twemoji.parse(pr, {"size":72});
 });
 
@@ -12,6 +10,9 @@ $(document).ready(function() {
         
     }
     
+    $('.contact').click(() => {
+        $(this).remove();
+    })
     
     //$('.taskDate').html("FF");
 });

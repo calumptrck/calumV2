@@ -3,7 +3,7 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 twi">
           <div class="card shadow grow2">
             <img class="profilePhoto" src="images/sm-sq.jpg" />
             <h1>Calum Patrick.</h1>
@@ -22,7 +22,7 @@
               <a href="//www.youtube.com/channel/UCM2Fz5E-jKbEsMPRedz9ppQ">
                 <i class="fa fa-youtube" aria-hidden="true"></i>
               </a>
-              <a href="mailto:calum@calumpatrick.com">
+              <a href="#">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
               </a>
               </p>
@@ -31,8 +31,8 @@
           <section class="featuredBlock">
             <h1 class="stitle">Featured:</h1>
             <hr>
-            <a href="#">
-            <div class="project featured shadow2 grow">
+            <a href="//www.producthunt.com/posts/studddent">
+            <div class="project shadow2 grow">
               <div class="ptext">
                 <h1> &#x1F3EB Studddent.</h1>
                 <p>A powerful, curated stash of online discounts available for students.</p>
@@ -46,11 +46,11 @@
                 </a>
                 </ul>
               </div>
-              </a>
             </div>
+            </a>
           </section>
           <section class="projects">
-            <h1 class="stitle">Projects:</h1>
+            <h1 class="stitle">My Work:</h1>
             <hr>
             <a href="//calumptrck.github.io/CoinDash/">
             <div class="project shadow2 grow">
@@ -109,7 +109,7 @@
                   <hr>
                   <ul>
                     <% day.tasks.forEach(function(task){ %>
-                    <li><span>&#x2705</span>&nbsp; <%= task %></li>
+                    <li><span class="check">&#x2705</span> <%= task %></li>
                     <% }); %>
                 </ul>
               </div>

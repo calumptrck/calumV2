@@ -1,6 +1,6 @@
 body {
   padding: 50px;
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(240, 240, 240);
 }
 
 .container {
@@ -18,12 +18,13 @@ ul {
 }
 
 .card {
-  background-color: #0023F2;
+  background: linear-gradient(90deg, rgba(0,9,36,1) 0%, rgba(0,35,242,1) 0%, rgb(1, 30, 192) 100%);
   padding: 20px;
   border-radius: .8em;
   color: #fff;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   transition: all .6s cubic-bezier(0,.5,.51,1);
+  margin-top: 50px;
 }
 
 
@@ -46,10 +47,12 @@ ul {
 }
 
 .profilePhoto {
-  width: 85px;
-  height: 85px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+  width: 124px;
+  height: 120px;
+  border-radius: 10%;
+  margin-bottom: 20px;
+  margin-top: -80px;
+  box-shadow: 0 3px 18px 0 hsla(237, 28%, 13%, 0.178);
 }
 
 .projects {
@@ -67,15 +70,6 @@ ul {
   overflow: auto;
 }
 
-.project:hover {
-  box-shadow: 0 12px 30px rgba(129, 129, 129, 0.15);
-  -moz-box-shadow:    0 12px 30px rgba(129, 129, 129, 0.15);
-  -webkit-box-shadow: 0 12px 30px rgba(129, 129, 129, 0.15);
-}
-
-.featured {
-  border: solid 1px #0023F2;
-}
 
 .ptext {
   float: left;
@@ -90,9 +84,6 @@ ul {
   list-style: none;
 }
 
-.projects hr {
-  margin-bottom: 30px;
-}
 
 
 .project h1 {
@@ -142,6 +133,8 @@ ul {
   box-shadow: 0 11px 15px 0 hsla(0, 0%, 80%, 0.2);
 }
 
+
+
 .stitle {
   font-size: 32px;
   font-weight: 600;
@@ -158,7 +151,7 @@ a, a:hover, a:visited {
   border-radius: .8em;
   border: 0;
   margin-bottom: 25px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-top: 1px;
   transition: all .6s cubic-bezier(0,.5,.51,1);
 }
@@ -172,10 +165,14 @@ a, a:hover, a:visited {
   margin-right: 20px;
 }
 
+hr {
+  margin-bottom: 20px;
+}
 
 .tasks hr {
-  background-color: #0023F2;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+  margin-right: 0px;
 }
 
 .day h1 {
@@ -189,6 +186,17 @@ a, a:hover, a:visited {
   background-color: #fff;
   width: 100%;
   margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.day li {
+  margin-left: 24px;
+  margin-bottom: 5px;
+}
+
+.check {
+  margin-left: -25px;
+  margin-right: 0;
 }
 
 .desc span {
@@ -227,11 +235,13 @@ img.emoji {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 990px) {
+  .tasks {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (max-width: 560px) {
-
-
-  
-
   .ptext {
     width: 100%;
     float: none;
@@ -244,6 +254,6 @@ img.emoji {
   }
 
   .tasks {
-    margin-top: 15px;
+    margin-top: 30px;
   }
 }
