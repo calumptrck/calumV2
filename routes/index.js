@@ -24,6 +24,15 @@ router.get('/', function(req, res, next) {
   
 });
 
+router.get('/add/:id1/:id2', function(req, res, next) {
+  console.log(Day);
+  var sum = parseInt(req.params.id1) + parseInt(req.params.id2);
+  res.status(200).json({
+    sum: sum
+  })
+  
+});
+
 router.post('/newpost', dayController.post);
 
 module.exports = router;
