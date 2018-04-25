@@ -8,3 +8,4 @@ bin/nohup.out
 bin/npm-debug.log
 nohup.out
 npm-debug.log
+.eslintrc.json

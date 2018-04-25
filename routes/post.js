@@ -11,7 +11,7 @@ let Day = require('./../models/Day');
 router.get('/', function(req, res, next) {
   console.log(Day);
   
-  Day.find({}).sort({date: -1}).limit(4).exec(function(err, days){
+  Day.find({}).sort({_id: -1}).limit(4).exec(function(err, days){
     if (err) {
       console.log(err);
     } else {
