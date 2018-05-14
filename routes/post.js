@@ -1,11 +1,8 @@
-var express = require('express');
-var router = express.Router();
-
-
-
+import express from 'express';
 import dayController from './../controllers/dayController';
-let Day = require('./../models/Day');
+import Day from './../models/Day';
 
+let router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -23,6 +20,5 @@ router.get('/', function(req, res, next) {
   });
   
 });
-
 
 module.exports = router;

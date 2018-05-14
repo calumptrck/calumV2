@@ -1,37 +1,38 @@
 <% include header %>
 
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 twi">
-          <div class="card shadow grow2">
-            <img class="profilePhoto" src="images/sm-sq.jpg" />
-            <h1>Calum Patrick.</h1>
-            <p>Currently studying mathematics at the University of Waterloo, as well as designing and developing web apps in
-              my free time using Node.js.</p>
-            <div class="social" <p>
-              <a href="//github.com/calumptrck">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-              <a href="//www.instagram.com/calumpat/">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a href="//twitter.com">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-              </a>
-              <a href="//www.youtube.com/channel/UCM2Fz5E-jKbEsMPRedz9ppQ">
-                <i class="fa fa-youtube" aria-hidden="true"></i>
-              </a>
-              <a href="mailto:calum@calum.co">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-              </a>
-              </p>
-            </div>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 twi">
+        <div class="card shadow grow2">
+          <img class="profilePhoto" src="images/sm-sq.jpg" />
+          <h1>Calum Patrick.</h1>
+          <p>Currently studying mathematics at the University of Waterloo, as well as designing and developing web apps in
+            my free time using Node.js.</p>
+          <div class="social"> 
+            <p>
+            <a href="//github.com/calumptrck">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="//www.instagram.com/calumpat/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="//twitter.com">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="//www.youtube.com/channel/UCM2Fz5E-jKbEsMPRedz9ppQ">
+              <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:calum@calum.co">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+            </p>
           </div>
-          <section class="featuredBlock">
-            <h1 class="stitle">Featured:</h1>
-            <hr>
-            <a href="//www.producthunt.com/posts/studddent">
+        </div>
+        <section class="featuredBlock">
+          <h1 class="stitle">Featured:</h1>
+          <hr>
+          <a href="//www.producthunt.com/posts/studddent">
             <div class="project shadow2 grow">
               <div class="ptext">
                 <h1> &#x1F3EB Studddent.</h1>
@@ -47,12 +48,12 @@
                 </ul>
               </div>
             </div>
-            </a>
-          </section>
-          <section class="projects">
-            <h1 class="stitle">My Work:</h1>
-            <hr>
-            <a href="//calumptrck.github.io/CoinDash/">
+          </a>
+        </section>
+        <section class="projects">
+          <h1 class="stitle">My Work:</h1>
+          <hr>
+          <a href="//calumptrck.github.io/CoinDash/">
             <div class="project shadow2 grow">
               <div class="ptext">
                 <h1> &#x1F4C8 Coindash. &nbsp;</h1>
@@ -68,8 +69,8 @@
                 </ul>
               </div>
             </div>
-            </a>
-            <a href="//calumptrck.github.io/LocalWeather/">
+          </a>
+          <a href="//calumptrck.github.io/LocalWeather/">
             <div class="project shadow2 grow">
               <div class="ptext">
                 <h1> &#x26C5 LocalWeather.</h1>
@@ -82,8 +83,8 @@
                 </ul>
               </div>
             </div>
-            </a>
-            <a href="//github.com/calumptrck/TuitionCoins">
+          </a>
+          <a href="//github.com/calumptrck/TuitionCoins">
             <div class="project shadow2 grow">
               <div class="ptext">
                 <h1> &#x1F4B0 TuitionCoins.</h1>
@@ -96,27 +97,36 @@
                 </ul>
               </div>
             </div>
-            </a>
-          </section>
-        </div>
-        <div class="col-lg-6">
-          <section class="tasks">
-            <h1 class="stitle">What I'm working on:</h1>
-            <hr>
-            <% days.forEach(function(day){ %>
-                <div class="day shadow2">
-                  <h1 class="taskDate"><%= day.date %></h1>
-                  <hr>
-                  <ul>
-                    <% day.tasks.forEach(function(task){ %>
-                    <li><span class="check">&#x2705</span> <%- task %></li>
-                    <% }); %>
-                </ul>
-              </div>
+          </a>
+        </section>
+      </div>
+      <div class="col-lg-6">
+        <section class="tasks">
+          <h1 class="stitle">What I'm working on:</h1>
+          <hr>
+          <% days.forEach(function(day){ %>
+            <div class="day shadow2">
+              <h1 class="taskDate">
+                <%= day.date %>
+              </h1>
+              <hr>
+              <ul>
+                <% day.tasks.forEach(function(task){ %>
+                  <li>
+                    <span class="check">&#x2705</span>
+                    <%- task %>
+                  </li>
+                  <% }); %>
+              </ul>
+            </div>
             <% }); %>
-            <div class="desc"><a href="/tasks"><span>👀</span></a></div>
-          </section>
-        </div>
+              <div class="desc">
+                <a href="/tasks">
+                  <span>👀</span>
+                </a>
+              </div>
+        </section>
       </div>
     </div>
-  </body>
+  </div>
+</body>
