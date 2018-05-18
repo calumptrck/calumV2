@@ -8,7 +8,10 @@ router.get('/', function(req, res, next) {
     if (err) {
       console.log(err);
     } else {
-      res.json(days);
+	res.render('tasks', {
+          title: 'Calum Patrick',
+          days: days,
+      });
     }
   });
 });

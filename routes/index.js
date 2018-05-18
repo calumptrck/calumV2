@@ -1,8 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-
-
 import dayController from './../controllers/dayController';
 let Day = require('./../models/Day');
 
@@ -15,10 +13,7 @@ router.get('/', function(req, res, next) {
     if (err) {
       console.log(err);
     } else {
-      res.render('index', { 
-        title: 'Calum Patrick',
-        days: days,
-      });
+	res.sendFile(path.join(__dirname, 'build', 'index.html'));
     }
   });
   
